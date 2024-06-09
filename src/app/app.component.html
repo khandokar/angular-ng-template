@@ -1,5 +1,11 @@
 <h2>Learn NG Template</h2>
-<ng-template>
-  <h3>This is a Template</h3>
-  <h3>This is an example pragraph to understand ng-template</h3>
+
+<!--Declare ng-template-->
+<ng-template #myTemplate>
+  <h3>This is a template</h3>
+  <p>This is an example paragraph to understand ng-template</p>
 </ng-template>
+
+<!--use ng-template using ngTemplateOutlet Directive, strcutual directive-->
+<div *ngTemplateOutlet="myTemplate"></div>
+
